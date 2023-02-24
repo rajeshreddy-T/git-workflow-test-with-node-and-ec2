@@ -44,11 +44,8 @@ jobs:
                   cd git-workflow-test-with-node-and-ec2
                   npm install                  
                   pm2 start app.js --name nodeapp --watch
-                  pm2 save
-                  pm2 startup
-                  pm2 status
-                  pm2 logs
-                  exit
+                  pm2 save                                    
+                  echo "pm2 status" && echo pm2 status        
 
 
 
