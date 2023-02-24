@@ -100,11 +100,17 @@ fork this repository to your github account
     npm install pm2 -g
     ```
 
-    <!-- start the nodejs application
+   create symbolic links for node and npm and pm2
     ```bash
-    cd /home/ubuntu
-    git clone -->
+    nodepath = whereis node
+    sudo ln -s /home/ubuntu/.nvm/versions/node/$nodepath/bin/node /usr/bin/node
+    sudo ln -s /home/ubuntu/.nvm/versions/node/v14.17.3/bin/npm /usr/bin/npm
+    sudo ln -s /home/ubuntu/.nvm/versions/node/v14.17.3/bin/pm2 /usr/bin/pm2
+    ```
 
+    clone the github repository to the ec2 instance
+    ```bash
+    git clone
 
 ## Step 5: Steps to create a CI/CD pipeline in Github actions
 add the aws private key to the github secrets following the below steps

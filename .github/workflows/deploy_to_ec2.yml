@@ -48,6 +48,10 @@ jobs:
                   pm2 startup
                   pm2 status
                   pm2 logs
+                  exit
+
+                  
+
 
                 
 
