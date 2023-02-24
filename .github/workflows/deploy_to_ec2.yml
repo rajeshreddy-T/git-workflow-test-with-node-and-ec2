@@ -26,7 +26,7 @@ jobs:
 
   Deploy:
       runs-on: ubuntu-latest
-      needs: build
+      needs: test
       steps:
       - name: SSH to ec2 and deploy the code and start the server
         uses: appleboy/ssh-action@master
