@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('CI / CD worked the code is deployed into ec2 and running!');
 });
 
 app.listen(port, () => {
