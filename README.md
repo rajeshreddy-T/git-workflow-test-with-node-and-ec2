@@ -165,6 +165,7 @@ create a workflow file
             pm2 save
             
     ```
+    ```bash
     5. commit the changes to the main branch
     6. go to the github repository
     7. click on actions
@@ -175,7 +176,7 @@ create a workflow file
     12. click on the step
     13. click on the view logs button
     14. you should see the following output
-    
+    ```    
 
 
 
