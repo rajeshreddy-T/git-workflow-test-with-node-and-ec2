@@ -38,10 +38,10 @@ jobs:
             port: ${{ secrets.SSH_PORT }}
             script: |
                   cd /home/ubuntu
+                  rm -rf git-workflow-test-with-node-and-ec2
                   git clone https://github.com/rajeshreddy-T/git-workflow-test-with-node-and-ec2.git
                   cd git-workflow-test-with-node-and-ec2
-                  npm install
-                  npm install pm2
+                  npm install                  
                   pm2 start index.js --name nodeapp --watch
                   pm2 save
                   pm2 startup

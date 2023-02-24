@@ -87,6 +87,7 @@ fork this repository to your github account
     install nvm
     ```bash
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+    source ~/.profile
     ```
 
     install nodejs
