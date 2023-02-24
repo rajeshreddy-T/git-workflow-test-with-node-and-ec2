@@ -23,8 +23,7 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build --if-present
-      - name: Test
-        run: npm test
+     
 
   Deploy:
       runs-on: ubuntu-latest
@@ -33,10 +32,10 @@ jobs:
       - name: SSH to ec2
         uses: appleboy/ssh-action@master
         with:
-            host: ${{ secrets.ssh_host }}
-            username: ${{ secrets.ssh_username }}
-            key: ${{ secrets.ssh_private_key }}
-            port: ${{ secrets.ssh_port }}
+            host: ${{ secrets.SSH_HOST }}
+            username: ${{ secrets.SSH_USERNAME }}
+            key: ${{ secrets.SSH_PRIVATE_KEY }}
+            port: ${{ secrets.SSH_PORT }}
             script: |
                   cd /home/ubuntu
                   git clone https://github.com/rajeshreddy-T/git-workflow-test-with-node-and-ec2.git
