@@ -106,9 +106,9 @@ fork this repository to your github account
 
 
 ## Step 5: Steps to create a CI/CD pipeline in Github actions
- 
-add the aws private key to the github secrets
-    1. go to the github repository
+add the aws private key to the github secrets following the below steps
+ ```bash
+    1. go to the github repository 
     2. click on settings
     3. click on secrets
     4. click on new repository secret
@@ -118,6 +118,7 @@ add the aws private key to the github secrets
         ssh_username: add the username of the ec2 instance created in step 2
         ssh_port: add the port number of the ec2 instance created in step 2
 
+```
 create a workflow file
     1. go to the github repository
     2. click on actions
