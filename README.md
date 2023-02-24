@@ -136,19 +136,16 @@ create a workflow file
     jobs:
     build:
         runs-on: ubuntu-latest
-
         steps:
         - uses: actions/checkout@v2
         - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-            node-version: '14'
+            node-version: 14
         - name: Install dependencies
         run: npm install
         - name: Build
-        run: npm run build --if-present
-        - name: Test
-        run: npm test
+        run: npm run build
         - name: Deploy
         uses: appleboy/ssh-action@master
         with:
@@ -158,17 +155,11 @@ create a workflow file
             port: ${{ secrets.ssh_port }}
             script: |
             cd /home/ubuntu
-            git clone https://github.com/
-            cd NodeAPP_v1
-            npm install
-            pm2 start index.js --name nodeapp --watch
-            pm2 save
-            
+            git clone
     ```
     ```bash
     5. commit the changes to the main branch
-    6. go to the github repository
-    7. click on actions
+    6. go to the github repository   7. click on actions
     8. click on the workflow file
     9. click on the run workflow button
     10. click on the workflow run
