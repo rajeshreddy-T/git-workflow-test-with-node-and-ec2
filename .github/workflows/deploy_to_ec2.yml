@@ -39,7 +39,7 @@ jobs:
             script: |
                   cd /home/ubuntu
                   git clone https://github.com/rajeshreddy-T/git-workflow-test-with-node-and-ec2.git
-                  cd NodeAPP_v1
+                  cd git-workflow-test-with-node-and-ec2
                   npm install
                   pm2 start index.js --name nodeapp --watch
                   pm2 save
