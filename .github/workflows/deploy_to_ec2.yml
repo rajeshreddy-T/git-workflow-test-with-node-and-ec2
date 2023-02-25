@@ -33,7 +33,7 @@ jobs:
         with:
             host: ${{ secrets.DUMMY_SSH_HOST }}
             username: ${{ secrets.DUMMY_SSH_USERNAME }}
-            key: ${{ secrets.DUMMY_SSH_PRIVATE_KEY }}
+            key: ${{ secrets.DUMMY_PRIVATE_KEY }}
             port: ${{ secrets.SSH_PORT }}
             script: |
                   cd /home/ubuntu
