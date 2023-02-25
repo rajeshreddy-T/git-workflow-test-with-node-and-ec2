@@ -33,12 +33,15 @@ fork this repository to your github account
     ```
 
     next install the webserver, nodejs, npm, and git
+
     ```bash
     sudo apt update
     sudo apt install nginx
     ```
+
     adjust firewall settings
-    ```bash
+
+    
     sudo ufw app list
 
     sudo ufw allow 'Nginx HTTP'
@@ -59,7 +62,9 @@ fork this repository to your github account
     ```bash
     sudo nano /etc/nginx/sites-available/default
     ```
+
     add the following lines to the file
+
     ```bash
     server {
         listen 80;
@@ -69,7 +74,9 @@ fork this repository to your github account
         }
     }
     ```
+
     test nginx configuration
+    
     ```bash
     sudo nginx -t
     ```
