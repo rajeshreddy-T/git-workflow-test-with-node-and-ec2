@@ -101,7 +101,9 @@ fork this repository to your github account
     ```
 
    create symbolic links for node and npm and pm2
+
     ```bash       
+       
         sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/node" "/usr/local/bin/node"
 
         sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/npm" "/usr/local/bin/npm"
@@ -109,10 +111,7 @@ fork this repository to your github account
         sudo ln -s "$NVM_DIR/versions/node/$(nvm version)/bin/pm2" "/usr/local/bin/pm2"
     ```
 
-    clone the github repository to the ec2 instance
-    ```bash
-    git clone
-
+  
 ## Step 5: Steps to create a CI/CD pipeline in Github actions
 add the aws private key to the github secrets following the below steps
  ```bash
