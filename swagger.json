@@ -18,8 +18,8 @@
     "paths" : {
         "/products" : {
             "get" : {
-                "summary" : "Get all the tasks",
-                "description": "Get all the tasks",
+                "summary" : "Get all the products",
+                "description": "Get all the products",
                 "produces": ["application/json"],
                 "parameters": [],
                 "responses": {
@@ -85,8 +85,8 @@
         },
         "/products/{id}" : {
             "put" : {
-                "summary" : "Update the tasks",
-                "description": "Update the tasks",
+                "summary" : "Update the products",
+                "description": "Update the products",
                 "produces": ["application/json"],
                 "parameters": [
                     {

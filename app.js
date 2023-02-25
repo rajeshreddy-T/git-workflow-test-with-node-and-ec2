@@ -11,7 +11,7 @@ var options = {
 // app.use(bodyParser.json());
 // app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, {customCss}));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options));
-let tasks = [
+let products = [
     {
       id: 1,
       task: 'task1',
@@ -26,14 +26,14 @@ app.get('/', (req, res) => {
 
 app.get('/api/products', (req, res) => {
     console.log('get todo list  called!!!!!')
-    res.json(tasks);
+    res.json(products);
   });
   
   app.post('/api/product', (req, res) => {
      const task = req.body.task;
      task.id = randomId(10);
-     tasks.push(task);
-     res.json(tasks);
+     products.push(task);
+     res.json(products);
   })
 
 app.listen(port, () => {
