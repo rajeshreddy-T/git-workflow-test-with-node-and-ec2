@@ -29,6 +29,7 @@ fork this repository to your github account
 ## Step 3: setup the ec2 instance with the following commands
     connect to the ec2 instance using the key pair created in step 2
     ```bash
+    
     ssh -i "keypair.pem" ubuntu@<hostip>.compute-1.amazonaws.com
     ```
 
@@ -37,8 +38,7 @@ fork this repository to your github account
     ```bash
     sudo apt update
     sudo apt install nginx
-    ```
-
+    
     adjust firewall settings
 
     
@@ -59,6 +59,7 @@ fork this repository to your github account
 
 
     <!-- create a reverse proxy from port 80 to port 3000-->
+
     ```bash
     sudo nano /etc/nginx/sites-available/default
     ```
@@ -76,7 +77,7 @@ fork this repository to your github account
     ```
 
     test nginx configuration
-    
+
     ```bash
     sudo nginx -t
     ```
