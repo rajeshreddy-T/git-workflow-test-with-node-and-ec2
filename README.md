@@ -131,43 +131,10 @@ create a workflow file
     1. go to the github repository
     2. click on actions
     3. click on set up a workflow yourself
-    4. add the following code to the file
-    ```yaml
-    name: CI/CD
-
-    on:
-    push:
-        branches: [ master ]
-    pull_request:
-        branches: [ master ]
-
-    jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v2
-        - name: Install Node.js
-        uses: actions/setup-node@v1
-        with:
-            node-version: 14
-        - name: Install dependencies
-        run: npm install
-        - name: Build
-        run: npm run build
-        - name: Deploy
-        uses: appleboy/ssh-action@master
-        with:
-            host: ${{ secrets.ssh_host }}
-            username: ${{ secrets.ssh_username }}
-            key: ${{ secrets.ssh_private_key }}
-            port: ${{ secrets.ssh_port }}
-            script: |
-            cd /home/ubuntu
-            git clone
-    ```
-    ```bash
+    4. add the code present in cicdWorkflow.yml file to the workflow file
     5. commit the changes to the main branch
-    6. go to the github repository   7. click on actions
+    6. go to the github repository   
+    7. click on actions
     8. click on the workflow file
     9. click on the run workflow button
     10. click on the workflow run
