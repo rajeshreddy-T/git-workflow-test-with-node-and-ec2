@@ -132,9 +132,9 @@ add the aws private key to the github secrets following the below steps
         ssh_host: add the elastic ip address of the ec2 instance created in step 2
         ssh_username: add the username of the ec2 instance created in step 2
         ssh_port: add the port number of the ec2 instance created in step 2
-
 ```
 create a workflow file
+```bash
     1. go to the github repository
     2. click on actions
     3. click on set up a workflow yourself
@@ -149,7 +149,7 @@ create a workflow file
     12. click on the step
     13. click on the view logs button
     14. you should see the following output
-    ```    
+```    
 
 
 
