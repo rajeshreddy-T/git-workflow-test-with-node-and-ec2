@@ -21,7 +21,7 @@ let products = [
 
 
 app.get('/', (req, res) => {
-  res.send('CI / CD worked the code is deployed into ec2 and running!');
+  res.send('Github action workflow CI / CD worked the code is deployed into ec2 and running!');
 });
 
 app.get('/api/products', (req, res) => {
