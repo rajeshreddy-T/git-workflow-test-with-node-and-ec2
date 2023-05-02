@@ -14,8 +14,8 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, options))
 let products = [
     {
       id: 1,
-      task: 'task1',
-      status: 'completed'
+      productName: 'Iphone',
+      description: 'iphone 12 pro max'
     }    
   ];
 
@@ -30,9 +30,9 @@ app.get('/api/products', (req, res) => {
   });
   
   app.post('/api/product', (req, res) => {
-     const task = req.body.task;
-     task.id = randomId(10);
-     products.push(task);
+     const productName = req.body.productName;
+     productName.id = randomId(10);
+     products.push(productName);
      res.json(products);
   })
 
