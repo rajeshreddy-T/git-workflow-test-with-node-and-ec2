@@ -21,7 +21,7 @@ let products = [
 
 
 app.get('/', (req, res) => {
-  res.send('This is a backend deployed on the Availability zone US-east-1A !');
+  res.send('This is a backend deployed on the Availability zone US-east-1B -----!');
 });
 
 app.get('/api/products', (req, res) => {
