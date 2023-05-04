@@ -21,7 +21,7 @@ let products = [
 
 
 app.get('/', (req, res) => {
-  res.send('CI / CD worked the code is deployed into ec2 and running!');
+  res.send('This is a backend deployed on the Availability zone US-east-1A !');
 });
 
 app.get('/api/products', (req, res) => {
